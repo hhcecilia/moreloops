@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int rows;
+    int number = 1;
+
+    // ask user how many rows.
+    cout << "Enter the number of rows: ";
+    cin >> rows;
+
+   // outter loop, starts with int i = j, then i<= rows;, then ++i.
+    for (int i = 1; i <= rows; ++i) {
+        // inner loop continues as follows: int j = 1; j <= i; ++j.
+        for (int j = 1; j <= i; ++j) {
+            cout << number << " "; // number variable keeps track of what number to use next.
+            ++number;  // this means number = number + 1
+        }
+        cout << endl;
+    }
+
+    return 0;
+}
